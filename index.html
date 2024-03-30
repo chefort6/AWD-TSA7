@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="form-modal">
+    
+        <div class="form-toggle">
+            <button id="login-toggle" onclick="toggleLogin()">log in</button>
+            <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+        </div>
+    
+        <div id="login-form">
+            <form>
+                <input type="text" placeholder="Enter email or username" required/>
+                <input type="password" placeholder="Enter password" required/>
+                <button type="button" class="btn login">login</button>
+                <p><a href="javascript:void(0)">Forgotten account</a></p>
+                <hr/>
+                <button type="button" class="sign"><i class="bi bi-google google"></i>Sign in with Google</button>
+                <button type="button" class="sign"><i class="bi bi-linkedin linked"></i>Sign in with LinkedIn</button>
+                <button type="button" class="sign"><i class="bi bi-windows windows"></i>Sign in with Microsoft</button>
+            
+            </form>
+        </div>
+    
+        <div id="signup-form">
+            <form>
+                <p>Please fill in this form to create an account!</p>
+                <hr/>
+                <input type="text" placeholder="First name" required/>
+                <input type="text" placeholder="Last name" required/>
+                <input type="email" placeholder="Enter your email" required/>
+                <input type="password" placeholder="Password" required/>
+                <input type="password" placeholder="Confirm Password" required/>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="check"/>
+                    <label for="check" class="terms">I accept the <a href="#" class="link-primary">Terms of Use</a> & <a href="#" class="link-primary">Privacy Policy</a></label>
+                </div>
+                <button type="button" class="btn signup">sign up</button>
+            </form>
+        </div>
+    
+    </div>
+    
+    <script src="./Assets/JS/function.js"></script>
+</body>
+</html>
